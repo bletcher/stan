@@ -4,8 +4,11 @@
 # devtools::install_github('Conte-Ecology/westBrookData/getWBData')
 
 library(getWBData)
+<<<<<<< HEAD
 library(dplyr)
 library(lubridate)
+=======
+>>>>>>> 92781ec2235041006d111c09605b4b2d825ec1b7
 
 cdWB <- createCoreData(sampleType = "electrofishing", #"stationaryAntenna","portableAntenna"), 
                        whichDrainage = "west",
@@ -25,6 +28,11 @@ cdWB <- createCoreData(sampleType = "electrofishing", #"stationaryAntenna","port
 #sites$section <- as.numeric(sites$section)
 ############# 2_prepare data
 
+<<<<<<< HEAD
+=======
+library(dplyr)
+library(lubridate)
+>>>>>>> 92781ec2235041006d111c09605b4b2d825ec1b7
 
 # install dev version to fix NA problem with lag()
 #if (packageVersion("devtools") < 1.6) {
@@ -48,6 +56,7 @@ cdWB$riverOrdered <- factor(cdWB$river,levels=c('west brook', 'wb jimmy', 'wb mi
 
 save(cdWB, file='/home/ben/stan/cjs/cdForStanWB.RData')
 
+<<<<<<< HEAD
 ######
 load(file='/home/ben/stan/cjs/cdForStanWB.RData')
 
@@ -83,6 +92,9 @@ createCH <- function(cd){
 
 dat <- createCH(cd)
 save(dat, file='/home/ben/stan/cjs/dat.RData')
+=======
+
+>>>>>>> 92781ec2235041006d111c09605b4b2d825ec1b7
 
 
 
@@ -90,7 +102,17 @@ save(dat, file='/home/ben/stan/cjs/dat.RData')
 
 
 
+<<<<<<< HEAD
 ###### old below
+=======
+
+
+
+
+
+
+
+>>>>>>> 92781ec2235041006d111c09605b4b2d825ec1b7
 
 
 
